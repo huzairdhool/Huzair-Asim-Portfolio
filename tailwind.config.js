@@ -1,14 +1,13 @@
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       backgroundImage: {
-        circularLight: 'repeating-linear-gradient(rgba(0, 0, 0, 0.04) 2px, #f5f5f5 100px)',
+        circularLight:
+          "repeating-radial-gradient(circle, rgba(0,0,0,0.1) 2px, transparent 40px, transparent 80px)",
       },
     },
   },
   plugins: [],
-}
+};

@@ -50,7 +50,7 @@ const About = () => {
             <img
               src={assets.pf}
               alt="Profile"
-              className="h-fit w- rounded-2xl object-contain"
+              className="h-fit w-fit rounded-2xl object-contain"
             />
           </motion.div>
         </div>
