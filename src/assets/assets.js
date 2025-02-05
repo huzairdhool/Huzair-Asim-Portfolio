@@ -7,6 +7,7 @@ import cross_icon from './cross_icon.png'
 import Profile_img_1 from './Profile_img_1.png'
 import pf from './pf.jpg'
 import text from './text.png'
+import skills from './skills.jpg'
 
 export const assets = {
     github,
@@ -18,4 +19,5 @@ export const assets = {
     Profile_img_1,
     text,
     pf,
+    skills,
 }
