@@ -2,37 +2,44 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const education = [
-    {
-        degree: "Bachelor of Science in Computer science",
-        institution: "Superior College Gujrat (GCUF)",
-        duration: "2020 - 2024",
-        description:
-          "Bachelor of Science in Computer Science provides a comprehensive foundation in programming, algorithms, data structures, and software development.",
-      },
+const experiences = [
   {
-    degree: "BDiploma in Graphic Designing",
-    institution: "Digi Skills",
-    duration: "2020",
+    title: "Graphic Designer",
+    company: "Freelancer",
+    duration: "2020 - Present",
     description:
-      "Completed Courses of graphic designer, I specialize in creating unique logos and impactful designs using industry-standard tools like Adobe Illustrator, Photoshop, Figma, and XD to enhance brand identity and user experience",
+      "Bringing ideas to life through compelling visuals and designs. Specialized in Logos, using Illustrator, Figma, Photoshop, and XD.",
   },
   {
-    degree: "Diploma in Web Development",
-    institution: "Adan IT centre",
-    duration: "2022",
+    title: "Frontend Developer",
+    company: "Freelancer",
+    duration: "2022 - Present",
     description:
-      "Completed courses in HTML, CSS, JavaScript, and React. Gained hands-on experience in building dynamic websites and applications.",
+      "Building dynamic, responsive, and user-friendly websites with a strong focus on aesthetics and performance using React.js, Next.js, and Tailwind CSS.",
+  },
+  {
+    title: "Graphic Designer & Junior Frontend Developer",
+    company: "Digital Awaken",
+    duration: "2023 - 2024",
+    description:
+      "Designed and developed engaging websites, marketing materials, social media graphics, and logos, enhancing brand identity and user experience.",
+  },
+  {
+    title: "Frontend Developer & Graphic Designer",
+    company: "Ossaf Ali Development Center",
+    duration: "2024 - Present",
+    description:
+      "Building dynamic, responsive, and user-friendly websites and designs using different available technologies.",
   },
 ];
 
-const Education = () => {
+const Experience = () => {
   return (
     <section className="w-full min-fit flex flex-col items-center bg-gray-100 py-16 px-6 sm:px-12 md:px-20 lg:px-32">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-20">Education</h2>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-20">Experience</h2>
       <div className="w-full max-w-6xl">
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {education.map((edu, index) => {
+          {experiences.map((exp, index) => {
             const { ref, inView } = useInView({
               triggerOnce: true,
               threshold: 0.2,
@@ -53,11 +60,10 @@ const Education = () => {
                 }}
                 className="bg-black text-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:rotate-[1deg]"
               >
-                
-                <h3 className="text-xl font-semibold">{edu.degree}</h3>
-                <p>{edu.institution} | {edu.duration}</p>
+                {/* Title and Company Outside Box */}
+                <h3 className="text-xl font-semibold">{exp.title}</h3>
+                <p>{exp.company} | {exp.duration}</p>
 
-                
                 <motion.p
                   initial={{ opacity: 0, y: 30 }}
                   animate={{
@@ -71,7 +77,7 @@ const Education = () => {
                   }}
                   className="mt-4 p-4 bg-black text-white"
                 >
-                  {edu.description}
+                  {exp.description}
                 </motion.p>
               </motion.li>
             );
@@ -82,4 +88,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

@@ -36,7 +36,7 @@ const Skills = () => {
             animate={inView ? { opacity: 1, x: skill.x, y: skill.y, scale: 1 } : {}}
             transition={{ duration: 1.5, ease: "easeOut" }}
             className={`absolute bg-black text-white px-4 py-2 text-xs sm:px-3 sm:py-1 sm:text-xs md:px-4 md:py-2 md:text-sm rounded-full shadow-lg ${
-              skill.bold ? "text-lg sm:text-base font-bold bg-black px-6 py-3" : ""
+              skill.bold ? "text-lg sm:text-base font-bold bg-black px-6 py-3 text-center" : ""
             }`}
           >
             {skill.name}

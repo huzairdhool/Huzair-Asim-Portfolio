@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Skills from './Skills';
 import Education from './Education';
+import Experience from './Experiences';
 
 const About = () => {
   return (
@@ -57,6 +58,7 @@ const About = () => {
         </div>
       </section>
       <Skills/>
+      <Experience/>
       <Education/>
     </main>
   );
