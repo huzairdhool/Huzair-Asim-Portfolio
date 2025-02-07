@@ -37,6 +37,14 @@ const Header = () => {
           >
             My Resume
           </motion.a>
+          <motion.a
+            href="/Contact"
+            whileHover={{ scale: 1.1, backgroundColor: "white", y: -8 }}
+            whileTap={{ scale: 0.9 }}
+            className="inline-block bg-gray-300 text-black px-6 py-3 rounded-md transition duration-300 cursor-pointer mt-5 ml-3"
+          >
+            Contact Me
+          </motion.a>
 
 
         </div>

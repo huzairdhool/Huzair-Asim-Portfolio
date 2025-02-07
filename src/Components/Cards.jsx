@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
-
 const cards = [
     {
         title: "Ossaf Ali Property Center",
@@ -16,6 +15,16 @@ const cards = [
     {
         title: "Amazone Clone",
         description: "Building responsive and interactive websites using modern technologies.",
+        image: '/p1.png'
+    },
+    {
+        title: "Logo Design",
+        description: "Designing unique and impactful logos using Adobe Illustrator to establish a strong brand identity.",
+        image: '/p1.png'
+    },
+    {
+        title: "UI/UX Design",
+        description: "Crafting intuitive, user-centered designs using tools like Figma and Adobe XD to seamlessly blend aesthetics and functionality for an exceptional digital experience.",
         image: '/p1.png'
     }
 ];
@@ -64,8 +73,8 @@ const Card = ({ title, description, image }) => {
             >
                 <img src={image} alt={title} className="w-full h-60 object-cover rounded-lg mb-3" />
                 <div className='place-content-center ml-3'>
-                <h3 className="text-xl font-semibold">{title}</h3>
-                <p className="text-gray-600">{description}</p>
+                    <h3 className="text-xl font-semibold">{title}</h3>
+                    <p className="text-gray-600">{description}</p>
                 </div>
             </div>
         </motion.div>
@@ -82,4 +91,4 @@ const Cards = () => {
     );
 };
 
-export default Cards;
+export default Cards; 
