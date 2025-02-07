@@ -2,25 +2,21 @@ import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 
-
-const placeholderImage2 = "https://via.placeholder.com/300";
-const placeholderImage3 = "https://via.placeholder.com/300";
-
 const cards = [
     {
-        title: "Project One",
-        description: "This is a short description of the first project.",
+        title: "Ossaf Ali Property Center",
+        description: "A modern, responsive website built with React and Tailwind CSS, offering a seamless user experience with fast performance and sleek design.",
         image:'/p1.png'
     },
     {
-        title: "Amazing Design",
-        description: "A more detailed explanation of this design concept, showcasing creativity.",
-        image: placeholderImage2
+        title: "Dhool Ceiling & Electric store",
+        description: "A Portfolio and informational website for small business using Javascript, css and html.",
+        image: '/p1.png'
     },
     {
-        title: "Web Development",
+        title: "Amazone Clone",
         description: "Building responsive and interactive websites using modern technologies.",
-        image: placeholderImage3
+        image: '/p1.png'
     }
 ];
 
@@ -57,18 +53,20 @@ const Card = ({ title, description, image }) => {
                 rotateY,
                 transformStyle: "preserve-3d",
             }}
-            className="relative w-fit max-w-lg rounded-xl bg-gradient-to-br from-gray-300 to-gray-400 mb-6 p-4 shadow-lg"
+            className="relative max-w-lg rounded-xl bg-gradient-to-br from-gray-300 to-gray-400 mb-6 p-4 shadow-lg hover:shadow-2xl"
         >
             <div
                 style={{
                     transform: "translateZ(50px)",
                     transformStyle: "preserve-3d",
                 }}
-                className="relative rounded-xl bg-white shadow-md p-4"
+                className="relative rounded-xl bg-white shadow-md p-4 flex flex-row w-full"
             >
-                <img src={image} alt={title} className="w-full h-40 object-cover rounded-lg mb-3" />
+                <img src={image} alt={title} className="w-full h-60 object-cover rounded-lg mb-3" />
+                <div className='place-content-center ml-3'>
                 <h3 className="text-xl font-semibold">{title}</h3>
                 <p className="text-gray-600">{description}</p>
+                </div>
             </div>
         </motion.div>
     );
