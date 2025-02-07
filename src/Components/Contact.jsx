@@ -50,7 +50,7 @@ const Contact = () => {
             <div>
               <div className="text-gray-600">
                 <div className="flex items-center mb-2">
-                <img src={assets.contact} className='w-5 mr-2'></img>
+                <img src={assets.call} className='w-5 mr-2'></img>
                   <span className='text-black'>Call Me</span>
                 </div>
                 <p className="mb-4 font-medium">+923369817273</p>
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                 <p className="mb-4 font-medium">huzairdhool@mail.com</p>
                 <div className="flex items-center mb-2">
-                <img src={assets.loc_icon} className='w-5 mr-2'></img>
+                <img src={assets.location} className='w-5 mr-2'></img>
                   <span className='text-black'>Address</span>
                 </div>
                 <p className='font-medium'>Dhool Khurd Dinga Road Gujrat</p>   

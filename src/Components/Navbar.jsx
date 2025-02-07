@@ -38,7 +38,7 @@ const Navbar = () => {
             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
 
-          {/* Desktop Menu (visible when the screen is larger than 'md') */}
+          {/* Desktop Menu  */}
           <div className="flex space-x-4">
             <motion.a href="https://www.instagram.com/huzair_asim/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
               <img src={assets.instagram} alt="Instagram" className="w-6 h-6"/>
