@@ -8,6 +8,7 @@ import Profile_img_1 from './Profile_img_1.png'
 import pf from './pf.jpg'
 import text from './text.png'
 import skills from './skills.jpg'
+import p1 from './p1.png'
 
 export const assets = {
     github,
@@ -20,4 +21,5 @@ export const assets = {
     text,
     pf,
     skills,
+    p1,
 }
