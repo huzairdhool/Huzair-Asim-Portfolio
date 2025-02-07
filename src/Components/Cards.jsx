@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { assets } from '../assets/assets';
 
 const cards = [
     {
@@ -75,6 +76,11 @@ const Card = ({ title, description, image }) => {
                 <div className='place-content-center ml-3'>
                     <h3 className="text-xl font-semibold">{title}</h3>
                     <p className="text-gray-600">{description}</p>
+                    <button> 
+                        <motion.a href="https://github.com/huzairdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+                                 <img src={assets.github} alt="GitHub" className="w-6 h-6"/>
+                               </motion.a>
+                    </button>
                 </div>
             </div>
         </motion.div>
