@@ -14,6 +14,7 @@ import text from './text.png'
 import skills from './skills.jpg'
 import p1 from './p1.png'
 import p2 from './p2.png'
+import huzair_cv from './huzair_cv.pdf'
 
 export const assets = {
     github,
@@ -32,4 +33,5 @@ export const assets = {
     skills,
     p1,
     p2,
+    huzair_cv,
 }
