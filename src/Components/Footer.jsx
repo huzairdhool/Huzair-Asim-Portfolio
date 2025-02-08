@@ -71,6 +71,15 @@ const Footer = () => {
         >
           <img src={assets.github} alt="GitHub" className="w-8 h-8" />
         </motion.a>
+        <motion.a
+          href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <img src={assets.fiverr} alt="Fiverr" className="w-8 h-8" />
+        </motion.a>
       </div>
 
     </footer>

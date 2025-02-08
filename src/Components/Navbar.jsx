@@ -52,6 +52,9 @@ const Navbar = () => {
             <motion.a href="https://github.com/huzairdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
               <img src={assets.github} alt="GitHub" className="w-6 h-6"/>
             </motion.a>
+            <motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+          <img src={assets.fiverr} alt="Instagram" className="w-6 h-6"/>
+        </motion.a>
           </div>
         </div>
       </nav>
@@ -89,6 +92,9 @@ const Navbar = () => {
         </motion.a>
         <motion.a href="https://github.com/huzairdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.github} alt="GitHub" className="w-6 h-6"/>
+        </motion.a>
+        <motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+          <img src={assets.fiverr} alt="Instagram" className="w-6 h-6"/>
         </motion.a>
       </nav>
     </header>
