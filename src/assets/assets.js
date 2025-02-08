@@ -10,6 +10,7 @@ import bars_icon from './bars_icon.png'
 import cross_icon from './cross_icon.png'
 import Profile_img_1 from './Profile_img_1.png'
 import pf from './pf.jpg'
+import pf2 from './pf2.png'
 import text from './text.png'
 import skills from './skills.jpg'
 import p1 from './p1.png'
@@ -34,4 +35,5 @@ export const assets = {
     p1,
     p2,
     huzair_cv,
+    pf2,
 }

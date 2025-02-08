@@ -22,7 +22,7 @@ const About = () => {
           The Person Behind the Pixels
         </motion.h1>
 
-        <div className='flex flex-col md:flex-row items-center justify-center w-full gap-10 md:gap-16 lg:gap-20 mt-6 sm:mt-6'>
+        <div className='flex flex-col md:flex-row items-center justify-center w-fit gap-10 md:gap-16 lg:gap-20 mt-6 sm:mt-6'>
           <div className='text-center md:text-left max-w-md sm:max-w-lg'>
             <h2 className='text-xl sm:text-2xl font-bold mb-3'>About Me</h2>
             <p className='font-medium leading-relaxed'>
@@ -50,9 +50,9 @@ const About = () => {
             className="relative"
           >
             <img
-              src={assets.pf}
+              src={assets.pf2}
               alt="Profile"
-              className="h-fit w-fit rounded-2xl object-contain"
+              className="h-1/2 w-78 rounded-2xl object-cover"
             />
           </motion.div>
         </div>
