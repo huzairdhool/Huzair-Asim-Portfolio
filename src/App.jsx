@@ -5,7 +5,7 @@ import About from './Components/About.jsx';
 import Projects from './Components/Projects.jsx';
 import Contact from './Components/Contact.jsx';
 import Footer from './Components/Footer.jsx';
-import PageTransition from './Components/Pagetransition.jsx';
+import PageTransition from './Components/PageTransition.jsx';
 
 const App = () => {
   return (
