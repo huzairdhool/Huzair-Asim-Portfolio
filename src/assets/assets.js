@@ -16,6 +16,14 @@ import skills from './skills.jpg'
 import p1 from './p1.png'
 import p2 from './p2.png'
 import huzair_cv from './huzair_cv.pdf'
+import logo1 from './logo1.png'
+import logo2 from './logo2.png'
+import flyer1 from './flyer1.png'
+import flyer2 from './flyer2.png'
+import card1 from './card1.png'
+import card2 from './card2.png'
+import ui1 from './ui1.png'
+import ui2 from './ui2.png'
 
 export const assets = {
     github,
@@ -36,4 +44,12 @@ export const assets = {
     p2,
     huzair_cv,
     pf2,
+    logo1,
+    logo2,
+    flyer1,
+    flyer2,
+    card1,
+    card2,
+    ui1,
+    ui2,
 }

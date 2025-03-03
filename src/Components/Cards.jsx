@@ -18,16 +18,16 @@ const cards = [
         description: "Building responsive and interactive websites using modern technologies.",
         image: '/p3.png'
     },
-    {
-        title: "Logo Designing",
-        description: "Designing unique and impactful logos using Adobe Illustrator to establish a strong brand identity.",
-        image: '/logos.png'
-    },
-    {
-        title: "UI/UX Designing",
-        description: "Crafting intuitive, user-centered designs using tools like Figma and Adobe XD to seamlessly blend aesthetics and functionality for an exceptional digital experience.",
-        image: '/ui.png'
-    }
+    // {
+    //     title: "Logo Designing",
+    //     description: "Designing unique and impactful logos using Adobe Illustrator to establish a strong brand identity.",
+    //     image: '/logos.png'
+    // },
+    // {
+    //     title: "UI/UX Designing",
+    //     description: "Crafting intuitive, user-centered designs using tools like Figma and Adobe XD to seamlessly blend aesthetics and functionality for an exceptional digital experience.",
+    //     image: '/ui.png'
+    // }
 ];
 
 const Card = ({ title, description, image, index }) => {
@@ -65,7 +65,7 @@ const Card = ({ title, description, image, index }) => {
                 <motion.img
                     src={image}
                     alt={title}
-                    className="w-full h-48 md:h-60 object-cover rounded-lg mb-3 md:mb-0 md:w-1/2"
+                    className="w-full h-full md:h-60 object-cover rounded-lg mb-3 md:mb-0 md:w-1/2"
                     style={{
                         rotateX,
                         rotateY,
