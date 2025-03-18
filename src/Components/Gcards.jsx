@@ -40,13 +40,18 @@ const Gcards = () => {
                             transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
                             className="w-full sm:w-3/4 lg:w-1/2 flex justify-center items-center p-4 sm:p-6 rounded-lg shadow-lg shadow-gray-500 overflow-hidden"
                         >
-                            <div className="relative w-[300px] h-[250px] sm:w-[350px] sm:h-[300px] lg:w-[400px] lg:h-[350px] flex justify-center items-center">
-                                <motion.img
-                                    key={currentIndex}
-                                    src={section.images[currentIndex]}
-                                    alt={section.title}
-                                    className='absolute w-full h-full object-contain transition-opacity duration-700 ease-in-out'
-                                />
+                            {/* Fixed-size wrapper prevents movement */}
+                            <div className="relative w-[350px] h-[250px] sm:w-[400px] sm:h-[300px] lg:w-[450px] lg:h-[350px] flex justify-center items-center bg-gray-200 rounded-md">
+                                {section.images.map((img, imgIndex) => (
+                                    <motion.img
+                                        key={imgIndex}
+                                        src={img}
+                                        alt={section.title}
+                                        className={`absolute w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
+                                            currentIndex === imgIndex ? "opacity-100" : "opacity-0"
+                                        }`}
+                                    />
+                                ))}
                             </div>
                         </motion.div>
 

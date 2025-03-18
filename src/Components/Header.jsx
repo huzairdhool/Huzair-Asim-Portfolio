@@ -29,8 +29,8 @@ const Header = () => {
           </p>
 
           <motion.a
-            href="/huzair_cv.pdf"
-            download="huzair_cv.pdf"
+            href="https://drive.google.com/file/d/1ChGTmO1P7UD8q_ifjKFNnKs6KYN_0VdF/view?usp=sharing"
+            download="huzair cv.pdf"
             whileHover={{ scale: 1.1, backgroundColor: "#333", y: -8 }}
             whileTap={{ scale: 0.9 }}
             className="inline-block bg-black text-white px-6 py-3 rounded-md transition duration-300 cursor-pointer mt-5"
