@@ -47,7 +47,7 @@ const Navbar = () => {
             <motion.a href="https://www.instagram.com/huzair_asim/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
               <img src={assets.instagram} alt="Instagram" className="w-6 h-6"/>
             </motion.a>
-            <motion.a href="https://www.instagram.com/dhool_graphics/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+            <motion.a href="https://www.behance.net/huzairasimdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
               <img src={assets.insta2} alt="Instagram Portfolio" className="w-6 h-6"/>
             </motion.a>
             <motion.a href="https://www.linkedin.com/in/huzair-asim-68a3291a3/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
@@ -56,9 +56,9 @@ const Navbar = () => {
             <motion.a href="https://github.com/huzairdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
               <img src={assets.github} alt="GitHub" className="w-6 h-6"/>
             </motion.a>
-            <motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+            {/*<motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.fiverr} alt="Instagram" className="w-6 h-6"/>
-        </motion.a>
+        </motion.a>*/}
           </div>
         </div>
       </nav>
@@ -92,7 +92,7 @@ const Navbar = () => {
         <motion.a href="https://www.instagram.com/huzair_asim/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.instagram} alt="Instagram" className="w-6 h-6"/>
         </motion.a>
-        <motion.a href="https://www.instagram.com/dhool_graphics/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+        <motion.a href="https://www.behance.net/huzairasimdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.insta2} alt="Instagram Portfolio" className="w-6 h-6"/>
         </motion.a>
         <motion.a href="https://www.linkedin.com/in/huzair-asim-68a3291a3/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
@@ -101,9 +101,9 @@ const Navbar = () => {
         <motion.a href="https://github.com/huzairdhool" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.github} alt="GitHub" className="w-6 h-6"/>
         </motion.a>
-        <motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
+        {/* <motion.a href="https://www.fiverr.com/huzairasim/buying?source=avatar_menu_profile" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
           <img src={assets.fiverr} alt="Instagram" className="w-6 h-6"/>
-        </motion.a>
+        </motion.a>*/}
       </nav>
     </header>
   );
