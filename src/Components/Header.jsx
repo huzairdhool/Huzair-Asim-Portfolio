@@ -25,7 +25,7 @@ const Header = () => {
           </motion.h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mt-6">
-            I am a Web Developer and a Graphic Designer. Explore my projects and discover excellence.
+            I am a Full Stack Designer. Explore my projects and discover excellence.
           </p>
 
           <motion.a
@@ -59,3 +59,83 @@ const Header = () => {
 };
 
 export default Header;
+
+{/*import React from "react";
+import Navbar from "./Navbar";
+import { assets } from "../assets/assets";
+import { motion } from "framer-motion";
+
+const Header = () => {
+  return (
+    <main className="w-full min-h-screen bg-[#f5f5f5] text-black">
+      <Navbar />
+
+      <section className="flex flex-col items-center justify-center text-center px-6 py-12">
+
+
+        <div className="text-center lg:text-left lg:w-1/2 space-y-4 sm:space-y-10">
+
+          <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 leading-relaxed">
+            Hey, I am
+          </p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight -my-3"
+          >
+            Huzair Asim
+          </motion.h1>
+
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mt-6">
+            I am a Full Stack Designer. Explore my projects and discover excellence.
+          </p>
+
+          {/* Buttons
+          <div className="mt-5 flex gap-3 justify-center lg:justify-start">
+
+            <motion.a
+              href="https://drive.google.com/file/d/1ChGTmO1P7UD8q_ifjKFNnKs6KYN_0VdF/view?usp=sharing"
+              download="huzair-cv.pdf"
+              whileHover={{ scale: 1.1, backgroundColor: "#333", y: -8 }}
+              whileTap={{ scale: 0.9 }}
+              className="inline-block bg-black text-white px-6 py-3 rounded-md transition duration-300 cursor-pointer"
+            >
+              My Resume
+            </motion.a>
+
+            <motion.a
+              href="/Contact"
+              whileHover={{ scale: 1.1, backgroundColor: "white", y: -8 }}
+              whileTap={{ scale: 0.9 }}
+              className="inline-block bg-gray-300 text-black px-6 py-3 rounded-md transition duration-300 cursor-pointer"
+            >
+              Contact Me
+            </motion.a>
+
+            <motion.a
+              href="/Contact"
+              whileHover={{ scale: 1.1 }}
+              className="bg-white border px-6 py-3 rounded-full shadow"
+            >
+              Hire Me
+            </motion.a>
+
+          </div>
+        </div>
+
+         Image Section 
+        <div className="relative mt-12 flex justify-center items-center">
+          <img
+            src={assets.Profile_img_1}
+            alt="Profile"
+            className="relative w-64 sm:w-80 object-contain"
+          />
+        </div>
+
+      </section>
+    </main>
+  );
+};
+export default Header;*/}
