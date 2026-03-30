@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { assets } from '../assets/assets'; 
 
-const cards = [
+{/*const cards = [
     {
         title: "Ossaf Ali Property Center",
         description: "A modern, responsive website built with React and Tailwind CSS, offering a seamless user experience with fast performance and sleek design.",
@@ -91,7 +91,7 @@ const Card = ({ title, description, image, index }) => {
                             </>
                         ) : (
                             <>
-                                <motion.a href="https://www.instagram.com/dhool_graphics/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}> {/* Example link */}
+                                <motion.a href="https://www.instagram.com/dhool_graphics/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}> {/* Example link
                                     <img src={assets.instagram} alt="Instagram" className="w-6 h-6" />
                                 </motion.a>
                                 <motion.a href="/Contact" whileHover={{ y: -2 }}>
@@ -114,6 +114,97 @@ const Cards = () => {
             ))}
         </div>
     );
+};
+
+export default Cards;*/}
+const cards = [
+  {
+    title: "Aura King",
+    description:
+      "A modern and visually appealing website built with React and Tailwind, focused on clean UI and smooth user experience.",
+    image: "/p1.png",
+    tag: "Web App",
+    date: "2024",
+  },
+  {
+    title: "Supreme AC Maintenance",
+    description:
+      "Service-based website for AC repair and maintenance, designed with performance, responsiveness, and conversion in mind.",
+    image: "/p2.png",
+    tag: "Business",
+    date: "2024",
+  },
+  {
+    title: "Punjab Karhai",
+    description:
+      "Restaurant website showcasing menu, branding, and user-friendly layout to enhance customer engagement.",
+    image: "/p3.png",
+    tag: "Restaurant",
+    date: "2024",
+  },
+];
+
+const Cards = () => {
+  return (
+    <div className="w-full py-16 px-4 bg-gray-100">
+      <div className="flex flex-col gap-10 max-w-5xl mx-auto">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col md:flex-row gap-8 items-center"
+          >
+            {/* Bigger Image */}
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full md:w-1/2 h-64 md:h-72 object-cover rounded-xl"
+            />
+
+            {/* Centered Content */}
+            <div className="flex-1 flex flex-col justify-center">
+              <div className="flex items-center gap-3 text-gray-500 mb-3">
+                <span className="text-sm">{card.date}</span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-xs">
+                  {card.tag}
+                </span>
+              </div>
+
+              <h3 className="text-2xl md:text-3xl font-semibold mb-3">
+                {card.title}
+              </h3>
+
+              <p className="text-gray-600 text-base md:text-lg mb-5 leading-relaxed">
+                {card.description}
+              </p>
+
+              {/* Icons */}
+              <div className="flex gap-5">
+                <a
+                  href="https://github.com/huzairdhool"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={assets.github}
+                    alt="GitHub"
+                    className="w-6 h-6 hover:scale-110 transition"
+                  />
+                </a>
+
+                <a href="/Contact">
+                  <img
+                    src={assets.call}
+                    alt="Contact"
+                    className="w-6 h-6 hover:scale-110 transition"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Cards;

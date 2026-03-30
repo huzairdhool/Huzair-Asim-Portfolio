@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { name: "Web & Designing", x: "0vw", y: "0vh", bold: true },
-  { name: "CSS", x: "15vw", y: "-7.5vh" }, 
-  { name: "JavaScript", x: "15vw", y: "7.5vh" }, 
+  { name: "UI/UX", x: "0vw", y: "0vh", bold: true },
+  { name: "Illustrator", x: "15vw", y: "-7.5vh" }, 
+  { name: "Photoshop", x: "15vw", y: "7.5vh" }, 
   { name: "React JS", x: "-15vw", y: "7.5vh" }, 
-  { name: "Next JS", x: "-15vw", y: "-7.5vh" }, 
+  { name: "Figma", x: "-15vw", y: "-7.5vh" }, 
   { name: "HTML", x: "-25vw", y: "0vh" }, 
-  { name: "Illustrator", x: "25vw", y: "0vh" }, 
-  { name: "Photoshop", x: "0vw", y: "22.5vh" }, 
-  { name: "Python", x: "0vw", y: "-22.5vh" }, 
-  { name: "Tailwind CSS", x: "25vw", y: "18.75vh" }, 
+  { name: "After effects", x: "25vw", y: "0vh" }, 
+  { name: "Premire Pro", x: "0vw", y: "22.5vh" }, 
+  { name: "Framer", x: "0vw", y: "-22.5vh" }, 
+  { name: "A+ Designing", x: "25vw", y: "18.75vh" }, 
   { name: "GitHub", x: "-25vw", y: "18.75vh" },
-  { name: "Figma", x: "-25vw", y: "-18.75vh" }, 
-  { name: "Wordpress", x: "25vw", y: "-18.75vh" }, 
+  { name: "Web Development", x: "-25vw", y: "-18.75vh" }, 
+  { name: "CSS", x: "25vw", y: "-18.75vh" }, 
 ];
 
 const Skills = () => {

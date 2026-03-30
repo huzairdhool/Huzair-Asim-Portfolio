@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header.jsx';
 import About from './Components/About.jsx';
 import Projects from './Components/Projects.jsx';
-import Designs from './Components/Designs.jsx';
+{/* Designs from './Components/Designs.jsx';*/}
 import Contact from './Components/Contact.jsx';
 import Footer from './Components/Footer.jsx';
 import PageTransition from './Components/PageTransition.jsx';
@@ -37,14 +37,14 @@ const App = () => {
             </PageTransition>
           } 
         />
-        <Route 
+    {/* <Route 
           path="/Designs" 
           element={
             <PageTransition>
               <Designs />
             </PageTransition>
           } 
-        />
+        />*/}
         <Route 
           path="/Contact" 
           element={
