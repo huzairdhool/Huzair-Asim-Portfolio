@@ -30,7 +30,7 @@ const Navbar = () => {
             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
           <Link to="/projects" className="relative group">
-            Web Projects
+            My Projects
             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
       {/* <Link to="/designs" className="relative group">
@@ -39,9 +39,9 @@ const Navbar = () => {
           </Link>*/}
           <Link to="/contact" className="relative group">
             Contact
-            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-bclack scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
-
+s
           {/* Desktop Menu  */}
           <div className="flex space-x-4">
             <motion.a href="https://www.instagram.com/huzair_asim/" target="_blank" rel="noopener noreferrer" whileHover={{ y: -2 }}>
