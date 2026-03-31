@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experiences';
+import Logos from './Logos';
 
 const About = () => {
   return (
@@ -26,9 +27,9 @@ const About = () => {
           <div className='text-center md:text-left max-w-md sm:max-w-lg'>
             <h2 className='text-xl sm:text-2xl font-bold mb-3'>About Me</h2>
             <p className='font-medium leading-relaxed'>
-              Hi, I’m <span className="font-semibold">Huzair Asim</span>, a passionate Graphic Designer and Web Developer
-              with 4 years of hands-on experience. I specialize in creating visually compelling designs and building
-              user-friendly websites that elevate brands. With a keen eye for detail and a deep understanding of both
+              Hi, I’m <span className="font-semibold">Huzair Asim</span>, a passionate Graphic Designer,Motion Designer,
+              UI/UX Designer and Web Developer with 4 years of hands-on experience. I specialize in creating visually
+              compelling designs and building that elevate brands. With a keen eye for detail and a deep understanding of both
               design and development, I bring creative ideas to life through innovative solutions. Let’s collaborate
               to turn your vision into reality.
             </p>
@@ -60,6 +61,7 @@ const About = () => {
       <Skills/>
       <Experience/>
       <Education/>
+      <Logos/>
     </main>
   );
 };

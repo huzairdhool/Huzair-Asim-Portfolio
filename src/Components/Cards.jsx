@@ -123,24 +123,21 @@ const cards = [
     description:
       "A modern and visually appealing website built with React and Tailwind, focused on clean UI and smooth user experience.",
     image: "/p1.png",
-    tag: "Web App",
-    date: "2024",
+    tag: "Complete Branding and Product Design",
   },
   {
     title: "Supreme AC Maintenance",
     description:
-      "Service-based website for AC repair and maintenance, designed with performance, responsiveness, and conversion in mind.",
+      "Created a logo and did complete branding for AC repair and maintenance compan in dubai, designed with performance,Trends and conversion in mind.",
     image: "/p2.png",
-    tag: "Business",
-    date: "2024",
+    tag: "Branding and Video Editing.",
   },
   {
     title: "Punjab Karhai",
     description:
-      "Restaurant website showcasing menu, branding, and user-friendly layout to enhance customer engagement.",
+      "Created complete Branding from logo to Restaurant website to Video and Motion Posts showcasing menu, branding, and user-friendly layout to enhance customer engagement.",
     image: "/p3.png",
-    tag: "Restaurant",
-    date: "2024",
+    tag: "Branding, Video editing and UI/UX",
   },
 ];
 
@@ -208,3 +205,4 @@ const Cards = () => {
 };
 
 export default Cards;
+

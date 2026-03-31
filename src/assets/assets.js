@@ -24,6 +24,13 @@ import card1 from './card1.png'
 import card2 from './card2.png'
 import ui1 from './ui1.png'
 import ui2 from './ui2.png'
+import auraking from './auraking.png'
+import lyma from './lyma.png'
+import rdxlogo from './rdxlogo.png'
+import supremelogo from './supremelogo.png'
+import sethi from './sethi.png'
+import naseerandspine from './naseerandspine.png'
+
 
 export const assets = {
     github,
@@ -52,4 +59,10 @@ export const assets = {
     card2,
     ui1,
     ui2,
+    auraking,
+    lyma,
+    rdxlogo,
+    supremelogo,
+    sethi,
+    naseerandspine,
 }

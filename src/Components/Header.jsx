@@ -25,11 +25,11 @@ const Header = () => {
           </motion.h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mt-6">
-            I am a Full Stack Designer. Explore my projects and discover excellence.
+           I am a Full Stack Designer. Explore my projects and see the creativity, effort, and attention to detail behind every piece of work.
           </p>
 
           <motion.a
-            href="https://drive.google.com/file/d/1ChGTmO1P7UD8q_ifjKFNnKs6KYN_0VdF/view?usp=sharing"
+            href="https://drive.google.com/file/d/1aukRK9qT7WY4D_4YdZDkBgjufoAE501S/view?usp=sharing"
             download="huzair cv.pdf"
             whileHover={{ scale: 1.1, backgroundColor: "#333", y: -8 }}
             whileTap={{ scale: 0.9 }}

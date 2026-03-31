@@ -17,7 +17,7 @@ const Projects = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className='font-bold text-4xl sm:text-5xl text-center my-5 sm:my-9'
         >
-          Things I have Done
+          My Work
         </motion.h1>
 
         <Cards />
