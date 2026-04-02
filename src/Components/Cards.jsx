@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion } from "framer-motion";
 import { assets } from '../assets/assets'; 
 
 {/*const cards = [
@@ -128,16 +128,16 @@ const cards = [
   {
     title: "Supreme AC Maintenance",
     description:
-      "Created a logo and did complete branding for AC repair and maintenance compan in dubai, designed with performance,Trends and conversion in mind.",
+      "Created a logo and complete branding for an AC repair and maintenance company in Dubai, designed with performance, trends, and conversion in mind.",
     image: "/p2.png",
-    tag: "Branding and Video Editing.",
+    tag: "Branding and Video Editing",
   },
   {
     title: "Punjab Karhai",
     description:
-      "Created complete Branding from logo to Restaurant website to Video and Motion Posts showcasing menu, branding, and user-friendly layout to enhance customer engagement.",
+      "Developed full branding from logo to restaurant website, including video and motion posts showcasing menu, branding, and user-friendly layout.",
     image: "/p3.png",
-    tag: "Branding, Video editing and UI/UX",
+    tag: "Branding, Video Editing and UI/UX",
   },
 ];
 
@@ -145,26 +145,37 @@ const Cards = () => {
   return (
     <div className="w-full py-16 px-4 bg-gray-100">
       <div className="flex flex-col gap-10 max-w-5xl mx-auto">
+
         {cards.map((card, index) => (
+          
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col md:flex-row gap-8 items-center"
+            className="bg-white rounded-2xl shadow-md p-6 flex flex-col md:flex-row gap-8 items-center"
           >
-            {/* Bigger Image */}
-            <img
-              src={card.image}
-              alt={card.title}
-              className="w-full md:w-1/2 h-64 md:h-72 object-cover rounded-xl"
-            />
 
-            {/* Centered Content */}
+            {/* Image Hover Only */}
+            <motion.div
+              whileHover={{
+                scale: 1.08,
+                y: -10,
+                boxShadow: "0px 25px 50px rgba(0,0,0,0.25)",
+              }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="w-full md:w-1/2"
+            >
+              <img
+                src={card.image}
+                alt={card.title}
+                className="w-full aspect-square object-contain bg-gray-50 rounded-xl p-4"
+              />
+            </motion.div>
+
+            {/* Content (unchanged) */}
             <div className="flex-1 flex flex-col justify-center">
-              <div className="flex items-center gap-3 text-gray-500 mb-3">
-                <span className="text-sm">{card.date}</span>
-                <span className="bg-gray-200 px-3 py-1 rounded-full text-xs">
-                  {card.tag}
-                </span>
-              </div>
+
+              <span className="bg-gray-200 px-3 py-1 rounded-full text-xs w-fit mb-3">
+                {card.tag}
+              </span>
 
               <h3 className="text-2xl md:text-3xl font-semibold mb-3">
                 {card.title}
@@ -177,12 +188,12 @@ const Cards = () => {
               {/* Icons */}
               <div className="flex gap-5">
                 <a
-                  href="https://github.com/huzairdhool"
+                  href="https://www.behance.net/huzairasimdhool"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={assets.github}
+                    src={assets.insta2}
                     alt="GitHub"
                     className="w-6 h-6 hover:scale-110 transition"
                   />
@@ -196,13 +207,16 @@ const Cards = () => {
                   />
                 </a>
               </div>
+
             </div>
+
           </div>
+
         ))}
+
       </div>
     </div>
   );
 };
 
 export default Cards;
-
