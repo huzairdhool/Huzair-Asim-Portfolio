@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Cards from './Cards';
 import Gcards from './Gcards';
 import { motion } from 'framer-motion';
@@ -7,7 +6,6 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   return (
     <main className="flex flex-col items-center text-black w-full min-h-screen bg-gray-100">  
-      <Navbar />
 
       <section className='w-full flex flex-col items-center px-6 sm:px-12 md:px-20 lg:px-32 py-10'>
 

@@ -8,7 +8,7 @@ import Contact from './Components/Contact.jsx';
 import Footer from './Components/Footer.jsx';
 import PageTransition from './Components/PageTransition.jsx';
 
-const App = () => {
+{/*const App = () => {
   return (
     <BrowserRouter>
 
@@ -44,7 +44,7 @@ const App = () => {
               <Designs />
             </PageTransition>
           } 
-        />*/}
+        />
         <Route 
           path="/Contact" 
           element={
@@ -54,6 +54,59 @@ const App = () => {
           } 
         />
       </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
+
+export default App;*/}
+
+const HomePage = () => {
+  return (
+    <PageTransition>
+      {/* Scroll Sections */}
+      <section id="home">
+        <Header />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+    </PageTransition>
+  );
+};
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+
+        {/* 🔵 CONTACT PAGE (separate) */}
+        <Route
+          path="/contact"
+          element={
+            <PageTransition>
+              <Contact />
+            </PageTransition>
+          }
+        />
+
+        {/* 🔵 OPTIONAL EXTRA PAGE */}
+        {/* <Route
+          path="/content"
+          element={
+            <PageTransition>
+              <Content />
+            </PageTransition>
+          }
+        /> */}
+      </Routes>
+
       <Footer />
     </BrowserRouter>
   );
