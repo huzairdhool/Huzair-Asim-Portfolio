@@ -63,7 +63,7 @@ const Contact = () => {
                 <img src={assets.location} className='w-5 mr-2'></img>
                   <span className='text-black'>Address</span>
                 </div>
-                <p className='font-medium'>Dhool Khurd Dinga Road Gujrat</p>   
+                <p className='font-medium'>Gujrat, Pakistan</p>   
               </div>
             </div>
             <div>
