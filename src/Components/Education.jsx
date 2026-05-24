@@ -11,7 +11,7 @@ const education = [
           "Bachelor of Science in Computer Science provides a comprehensive foundation in programming, algorithms, data structures, and software development.",
       },
   {
-    degree: "BDiploma in Graphic Designing",
+    degree: "Diploma in Graphic Designing",
     institution: "Digi Skills",
     duration: "2020",
     description:

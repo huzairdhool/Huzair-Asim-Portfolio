@@ -4,11 +4,11 @@ import { useInView } from "react-intersection-observer";
 
 const experiences = [
   {
-    title: "Graphic Designer",
-    company: "Digital Awaken",
-    duration: "2022 - 2024",
+    title: "Senior Graphic Designer",
+    company: "I Gate Technologies",
+    duration: "2025 - Present",
     description:
-      "Designed and developed engaging websites, marketing materials, social media graphics, and logos, enhancing brand identity and user experience.",
+      " Leading design tasks expanding into video editing and animation using tools like After Effects and Premiere Pro.",
   },
   {
     title: "Graphics and UI/UX Designer",
@@ -18,11 +18,11 @@ const experiences = [
       "Building dynamic, responsive, and user-friendly websites designs with a strong focus on aesthetics and performance using React and Figma.",
   },
   {
-    title: "Senior Graphic Designer",
-    company: "I Gate Technologies",
-    duration: "2025 - Present",
+    title: "Graphic Designer",
+    company: "Digital Awaken",
+    duration: "2022- 2024",
     description:
-      "Leading design tasks expanding into video editing and animation using tools like After Effects and Premiere Pro.",
+      "Designed and developed engaging websites, marketing materials, social media graphics, and logos, enhancing brand identity and user experience.",
   },
 ];
 

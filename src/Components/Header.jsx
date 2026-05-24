@@ -25,7 +25,7 @@ const Header = () => {
           </motion.h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mt-6">
-           I am a Full Stack Designer. Explore my projects and see the creativity, effort, and attention to detail behind every piece of work.
+           I am a Multimedia Designer. Explore my projects and see the creativity, effort, and attention to detail behind every piece of work.
           </p>
 
           <motion.a
