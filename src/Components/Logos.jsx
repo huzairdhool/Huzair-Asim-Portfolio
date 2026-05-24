@@ -13,39 +13,46 @@ const logos = [
 
 const Logos = () => {
   return (
-    <div className="w-full py-10">
+    <div className="w-full py-10 overflow-hidden">
 
       {/* Title */}
       <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
         className="font-bold text-3xl sm:text-5xl text-center my-6"
       >
-        Brands I have collabroted with
+        Brands I have collaborated with
       </motion.h1>
 
-      {/* Slider */}
-      <div className="relative w-full overflow-hidden mt-10">
+      {/* Marquee */}
+      <div className="relative w-full mt-10 overflow-hidden">
+
         <motion.div
           className="flex items-center gap-16 w-max"
-          animate={{ x: ["0%", "-50%"] }}
+          animate={{
+            x: ["0%", "-50%"]
+          }}
           transition={{
             repeat: Infinity,
-            duration: 20,
+            duration: 25,
             ease: "linear",
           }}
         >
+
           {[...logos, ...logos].map((logo, index) => (
             <div key={index} className="min-w-[180px] flex justify-center">
               <img
                 src={logo}
                 alt="brand"
-                className="h-20 md:h-24 object-contain opacity-70 hover:opacity-100 transition"
+                className="h-16 md:h-20 object-contain opacity-70 hover:opacity-100 transition"
               />
             </div>
           ))}
+
         </motion.div>
+
       </div>
     </div>
   );
