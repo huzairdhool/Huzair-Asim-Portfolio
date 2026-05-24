@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experiences';
-import Logos from './Logos';
 
 const About = () => {
   return (
@@ -56,8 +55,6 @@ const About = () => {
       <Skills />
       <Experience />
       <Education />
-      <Logos />
-
     </main>
   );
 };

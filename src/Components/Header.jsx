@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { assets } from '../assets/assets';
+import Logos from './Logos';
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -54,6 +55,7 @@ const Header = () => {
         </div>
 
       </section>
+      <Logos/>
     </main>
   );
 };
